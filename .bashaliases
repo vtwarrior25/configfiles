@@ -9,9 +9,10 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias weather='curl wttr.in/05767'
 alias weather2='curl v2.wttr.in/05767'
-alias winhome="cd /mnt/c/Users/cosmi"
-alias gabenewell='cat "/mnt/c/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg
-/gabenewell.cfg"'
+
+# WSL Commands
+# alias winhome="cd /mnt/c/Users/cosmi"
+# alias gabenewell='cat "/mnt/c/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/gabenewell.cfg"'
 
 # Export statements
 export EDITOR=vim
@@ -25,5 +26,6 @@ shopt -s dotglob
 shopt -s histappend # do not overwrite history
 shopt -s expand_aliases # expand aliases
 
-PS1="\n \[\033[0;34m\]┌─────(\[\033[1;35m\]\u\[\033[0;34m\])─────(\[\033[1;32m\]\w\[\033[0;34m\]) \n └> \[\033[1;
-36m\]\$ \[\033[0m\]"
+# Prompts
+#PS1="\n \[\033[0;34m\]┌─────(\[\033[1;35m\]\u\[\033[0;34m\])─────(\[\033[1;32m\]\w\[\033[0;34m\]) \n └> \[\033[1;36m\]\$ \[\033[0m\]"
+PS1="\n \[\033[0;34m\]┌─────(\[\033[1;35m\]\u\[\033[0;34m\])─────(\[\033[1;32m\]\w\[\033[0;34m\]) \n └> \[\033[1;36m\]\$ \[\033[0m\]"
