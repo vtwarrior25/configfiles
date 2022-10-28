@@ -1,0 +1,49 @@
+## Windows Path Versions
+
+
+# This is the default location that files will go into.
+-o 'E:\Captures\Audio Files\Music\youtubedlsongs\%(title)s.%(ext)s'
+
+
+# These top two are the settings for downloading songs.
+-a 'E:\Captures\Audio Files\Music\youtubedlsongs\ytdlsongstodownload.txt'
+# -o 'E:\Captures\Audio Files\Music\youtubedlsongs\%(title)s.%(ext)s'
+
+# For sound effects
+# -a 'E:\Captures\Audio Files\Music\soundeffects\effectstodownload.txt'
+#-o 'E:\Captures\Audio Files\Music\soundeffects\%(title)s.%(ext)s'
+
+# These bottom two are for downloading Youtube "podcast" videos
+# -a 'F:\Books\youtubeaudio\lastweektonight.txt'
+# -o 'F:\Books\youtubeaudio\lastweektonight\%(title)s.%(ext)s'
+
+# These are used for DefCon talks
+#-a 'F:\Books\youtubeaudio\defcontalks\defcontalks.txt'
+#-o 'F:\Books\youtubeaudio\defcontalks\%(title)s.%(ext)s'
+
+
+## Linux Path Versions
+
+# These top two are the settings for downloading songs.
+# -a "/mnt/e/Captures/Audio Files/Music/youtubedlsongs/ytdlsongstodownload.txt"
+# -o "/mnt/e/Captures/Audio Files/Music/youtubedlsongs/%(title)s.%(ext)s"
+
+# For sound effects
+# -a "/mnt/e/Captures/Audio Files/Music/soundeffects/effectstodownload.txt"
+# -o "/mnt/e/Captures/Audio Files/Music/soundeffects/%(title)s.%(ext)s"
+
+# These bottom two are for downloading Youtube "podcast" videos
+# -a "/mnt/f/Books/youtubeaudio/lastweektonight.txt"
+# -o "/mnt/f/Books/youtubeaudio/lastweektonight/%(title)s.%(ext)s"
+
+## The command for ffmpeg to merge all files is on the line below
+## ffmpeg -f concat -safe 0 -i socialengineeringfiles.txt -c copy socialengineeringaudiobook.mp3
+ 
+--download-archive 'C:\Users\cosmi\AppData\Roaming\yt-dlp\archive.txt'
+-w
+--audio-format mp3
+--embed-metadata
+--embed-thumbnail
+-x 
+--yes-playlist 
+--no-flat-playlist
